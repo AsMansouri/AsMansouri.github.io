@@ -1,1 +1,5 @@
 
+#menu-social li a[href*="researchgate.net"] .fa:before{content: "";background-image: url("https://www.researchgate.net/apple-touch-icon-180x180.png");height: 41px;width: 29px;display: inline-block;background-size: 100%;background-repeat: no-repeat;vertical-align: middle;}
+
+#menu-social li a[href*="academia.edu"] .fa:before{content: "";background-image: url("https://pbs.twimg.com/profile_images/631230022217379841/dMVBZTiA_400x400.png");height: 41px;width: 29px;display: inline-block;background-size: 100%;background-repeat: no-repeat;vertical-align: middle;}
+
