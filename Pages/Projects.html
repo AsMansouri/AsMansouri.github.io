@@ -1,179 +1,115 @@
+
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
+<html lang="en">
+<title>Projects</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<body class="w3-content" style="max-width:1300px">
-  
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link href="../Packages/fa/css/fontawesome.css" rel="stylesheet">
+<link href="../Packages/fa/css/brands.css" rel="stylesheet">
+<link href="../Packages/fa/css/solid.css" rel="stylesheet">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Main</a>
-    <a href="Pages/About.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="Pages/CV.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a>
-    <a href="Pages/Projects.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
-    <a href="Pages/Useful.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Useful topics</a>    
-    <a href="Pages/Publications.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Publications</a>
-    <a href="Pages/Contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Main</a>
+    <a href="About3.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="Projects.html" class="w3-bar-item w3-button w3-theme-l1">Projects</a>
+    <a href="Useful.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Useful topics</a>    
+    <a href="Publications.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
   </div>
 </div>
 
-<!-- First Grid: Logo & About -->
-<div class="w3-row">
-  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
-    <div class="w3-padding-64">
-      <h1>My Logo</h1>
-    </div>
-    <div class="w3-padding-64">
-      <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
-      <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">My Work</a>
-      <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Resume</a>
-      <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a>
-    </div>
-  </div>
-  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
-    <div class="w3-padding-64 w3-center">
-      <h1>About Me</h1>
-      <img src="/w3images/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
-      <div class="w3-left-align w3-padding-large">
-        <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
 
-<!-- Second Grid: Work & Resume -->
-<div class="w3-row">
-  <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
-    <div class="w3-padding-64">
-      <h2>My Work</h2>
-      <p>Some of my latest projects.</p>
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Published</h2>
+      <h4 class="w3-text-teal">
+        Seizure Detection and Localization using EEG signals
+      </h4>
+      <p>
+        Epilepsy is one of the three most prevalent neurological disorders. A significant proportion of patients suffering from epilepsy can be effectively treated if their seizures are detected in a timely manner. However, detection of most seizures requires the attention of trained neurologists—a scarce resource. Therefore, there is a need for an automatic seizure detection capability. A tunable non-patient-specific, non-seizure-specific method is proposed to detect the presence and locality of a seizure using electroencephalography (EEG) signals. This multifaceted computational approach is based on a network model of the brain and a distance metric based on the spectral profiles of EEG signals. This computationally time-efficient and cost-effective automated epileptic seizure detection algorithm has a median latency of 8 s, a median sensitivity of 83%, and a median false alarm rate of 2.9%. Hence, it is capable of being used in portable EEG devices to aid in the process of detecting and monitoring epileptic patients.
+      </p> 
+      <p>
+        <a href="https://doi.org/10.3390/a12090176"> Mansouri, Amirsalar, Sanjay P. Singh, and Khalid Sayood. "Online EEG Seizure Detection and Localization." Algorithms 12.9 (2019): 176. </a>
+      </p>
+      <p>
+        <a href="https://doi.org/10.1109/EIT.2017.8053397"> Mansouri, Amirsalar, Sanjay Singh, and Khalid Sayood. “Hierarchal Online Temporal and Spatial EEG Seizure Detection.” 2017 IEEE International Conference on Electro Information Technology (EIT) (May 2017). </a>
+      </p>
+      <h4 class="w3-text-teal">
+        Cellular and Viral Genomes RNA-seq Analysis
+      </h4>
+      <p>
+        The Kaposi’s sarcoma-associated herpesvirus (KSHV) is an important oncogenic virus previously shown to be neurotropic, but studies on neuronal cells infection and pathogenesis are still very limited. Here we characterized the effects of KSHV infection on neuronal SH-SY5Y cells by the recombinant virus rKSHV219, which expresses both GFP and RFP to reflect latent and lytic phases of infection. We demonstrated that infected cells have a faster growth rate and the KSHV infection can be sustained. Interestingly, the infected cells can transition spontaneously back and forth between lytic and latent phases of infections, producing progeny viruses but without any adverse effects on cell growth. In addition, transcriptome analysis of viral and cellular genes in latent and lytic cells showed that unlike other infected cell lines, the latently infected cells expressed both latent and most, but not all the lytic genes required for infectious virion production. The uniquely expressed viral genes by the lytic cells were mainly involved in the early steps of virus binding. Some of the cellular genes that were deregulated in both latent and lytically infected cells are involved in cell adhesion, in cell signal pathways and tumorigenesis. The downregulated cellular CCDN1, PAX5, NFASC and upregulated CTGF, BMP4, YAP1, LEF1 and HLA-DRB1 genes were found to be associated with the cell adhesion molecules (CAM), hippo signaling and cancer. These deregulated genes may be involved in creating an environment that are unique in the neuronal cells to sustain cell growth upon KSHV infection not observed in other infected cell types.
+      </p> 
+      <p> 
+        <a href="https://jvi.asm.org/content/early/2021/04/08/JVI.00003-21"> Kong, Xiaohong and Li, Dongmei and Mansouri, Amirsalar and Kang, Guobin and Sayood, Khalid and West, John and Wood, Charles. 2021. "Bone Marrow Derived SH-SY5Y Neuroblastoma Cells Infected by Kaposi's Sarcoma Herpes Virus (KSHV) Display Unique Infection Phenotypes and Growth Properties." Journal of Virology (American Society for Microbiology Journals). </a>
+      </p>     
     </div>
-    <div class="w3-row">
-      <div class="w3-half">
-        <img src="/w3images/coffee.jpg" style="width:100%">
-      </div>
-      <div class="w3-half">
-        <img src="/w3images/workbench.jpg" style="width:100%">
-      </div>
+  </div>
+ 
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">In Progress</h2>
+      <h4 class="w3-text-teal">
+        Automated Concussion Monitoring and Managments 
+      </h4>
+      <p>
+        Cases of concussions in the US keep increasing and are now up to 2 to 3 million incidents per year.  While concussions are recoverable and usually not life-threatening, the degree and rate of recovery may vary depending on age, severity of the injury, and prior concussion history of individuals. A subsequent concussion prior to full recovery often leads to more severe brain damage and poorer outcomes. Routine monitoring can be a convenient method for reducing unreported injuries and preventing long-term damage, especially among groups with a greater risk of experiencing a concussion, such as athletes participating in contact sports. Electroencephalograph (EEG) recordings can identify brain dysfunctionality and abnormalities. Due to the relative availability of EEG compared to other brain imaging techniques (e.g., functional Magnetic Resonance Imaging (fMRI)), the use of EEG monitoring is growing for various conditions.
+      </p>
+      <h4 class="w3-text-teal">
+        Brain activity connectivity Newtork & BCI
+      </h4>
+      <p>
+        General pathways of brain conectivity is investigated during BCI tasks.
+      </p>    
     </div>
-    <div class="w3-row w3-hide-small">
-      <div class="w3-half">
-        <img src="/w3images/workbench.jpg" style="width:100%">
-      </div>
-      <div class="w3-half">
-        <img src="/w3images/coffee.jpg" style="width:100%">
-      </div>
+  </div>
+  
+  
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h3 class="w3-text-teal">Future ideas</h3>
+      <h5 class="w3-text-teal">
+        Physiological signal abnormalities and their genetic and epigenetic corresponding factors  
+      </h5>
+      <p>
+        Studying Genetic and epigenetic assiciated factors for abnormal EEG alterations, among neurotypical participants and/or neurological patients.
+      </p>
     </div>
+  </div>
 
-    <div class="w3-row w3-hide-small">
-      <div class="w3-half">
-        <img src="/w3images/sound.jpg" style="width:100%">
-      </div>
-      <div class="w3-half">
-        <img src="/w3images/workbench.jpg" style="width:100%">
-      </div>
-    </div><br>
-    <p>Just call me awesome.</p>
-  </div>
-  <div class="w3-half w3-indigo w3-container" style="min-height:800px">
-    <div class="w3-padding-64 w3-center">
-      <h2>Resume</h2>
-      <p>A draft from my CV</p>
-      <div class="w3-container w3-responsive">
-        <table class="w3-table">
-          <tr>
-            <th>Year</th>
-            <th>Title</th>
-            <th>Where</th>
-          </tr>
-          <tr class="w3-white">
-            <td>2012-2016</td>
-            <td>The rest is history..</td>
-            <td>Lorem ipsum</td>
-          </tr>
-          <tr>
-            <td>2009-2012</td>
-            <td>Started my own company</td>
-            <td>My Garage</td>
-          </tr>
-          <tr class="w3-white">
-            <td>2008-2009</td>
-            <td>Started working for Lorem</td>
-            <td>London, UK</td>
-          </tr>
-          <tr>
-            <td>2005-2008</td>
-            <td>Degree in Bachelor of Design</td>
-            <td>Harvard, USA</td>
-          </tr>
-          <tr class="w3-white">
-            <td>2002-2005</td>
-            <td>Degree in Bachelor of Business</td>
-            <td>RMIT University, Melbourne, Australia</td>
-          </tr>
-          <tr class="w3-hide-medium">
-            <td>2002-2005</td>
-            <td>Degree in Bachelor of Business</td>
-            <td>RMIT University, Melbourne, Australia</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Third Grid: Swing By & Contact -->
-<div class="w3-row" id="contact">
-  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
-    <div class="w3-padding-64">
-      <h1>Swing By</h1>
-    </div>
-    <div class="w3-padding-64">
-      <p>..for a cup of coffee, or whatever.</p>
-      <p>Chicago, US</p>
-      <p>+00 1515151515</p>
-      <p>test@test.com</p>
-    </div>
-  </div>
-  <div class="w3-half w3-teal w3-container" style="height:700px">
-    <div class="w3-padding-64 w3-padding-large">
-      <h1>Contact</h1>
-      <p class="w3-opacity">GET IN TOUCH</p>
-      <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
-        <div class="w3-section">
-          <label>Name</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Name">
-        </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Email">
-        </div>
-        <div class="w3-section">
-          <label>Message</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Message">
-        </div>
-        <button type="submit" class="w3-button w3-teal w3-right">Send</button>
-      </form>
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <a href="https://www.researchgate.net/profile/Amirsalar-Mansouri/"> <i class="fa fa-researchgate w3-hover-opacity"></i></a>
-  <a href="https://www.linkedin.com/in/amirsalar-mansouri/"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<footer class="w3-container w3-blue-grey w3-center w3-margin-top">
+  <p>Find me on:
+  <a href="https://www.linkedin.com/in/amirsalar-mansouri/"> <i class="fab fa-linkedin w3-hover-opacity"></i></a>  
+  <a href="https://github.com/AsMansouri"> <i class="fab fa-github w3-hover-opacity"></i></a>
+  <a href="https://www.researchgate.net/profile/Amirsalar-Mansouri/"> <i class="fab fa-researchgate w3-hover-opacity"></i></a>
+  <a href="https://orcid.org/0000-0001-9014-5024"><i class="fab fa-orcid w3-hover-opacity"></i></a>
+  </p>
 </footer>
+  
+  
+  
+
+<!-- END MAIN -->
+</div>
 
 </body>
 </html>
