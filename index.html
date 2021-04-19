@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<title>About me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link href="../Packages/fa/css/fontawesome.css" rel="stylesheet">
+<link href="../Packages/fa/css/brands.css" rel="stylesheet">
+<link href="../Packages/fa/css/solid.css" rel="stylesheet">
+  
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+  
+<body class="w3-content" style="max-width:1300px">
+  
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">About me</a>
+    <a href="Pages/About3.html" class="w3-bar-item w3-button w3-theme-l1">About</a>
+    <a href="Pages/Projects.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+    <a href="Pages/Useful.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Useful topics</a>    
+    <a href="Pages/Publications.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
+  </div>
+</div>
+
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-half w3-blue-grey w3-container" style="height:800px">
+    <div class="w3-padding-64 w3-center">
+      <h1>About Me</h1>
+      <img src="TmpFiles/ProfPic - Copy.jpeg" class="w3-margin w3-circle" alt="Person" style="width:50%">
+      <div class="w3-left-align w3-padding-large">
+        <p>I am a Ph.D. candidate in the Electrical and Computer Engineering Department at the University of Nebraska- Lincoln and a member of the AAC Translation (AACT) Laboratory. 
+           My main research interests include biomedical signal processing, electroencephalogram (EEG) signal analysis, such as brain-computer interfaces (BCI), neurophysiological disease/disorder modeling and prediction (specifically for epilepsy and TBI).</p>
+        <p>
+          <b>My research interest</b>
+          <ul>
+            <li>EEG</li>
+            <li>Signal Processing</li>
+            <li>Machine Learning</li>           
+            <li>Bioinformatics</li>
+            <li>Data mining</li>
+            <li>RNA-seq</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-half w3-indigo w3-container" style="min-height:800px">
+    <div class="w3-padding-64 w3-center">
+      <h2>Resume</h2>
+      <p>Download the 
+        <a href="TmpFiles/CV-Amirsalar Mansouri.pdf" download>
+          CV  
+        </a>
+      </p>
+
+      <p>Educations</p>
+      <div class="w3-container w3-responsive">
+        <table class="w3-table">
+          <tr>
+            <th>Year</th>
+            <th>Title</th>
+            <th>Where</th>
+          </tr>
+          <tr class="w3-white">
+            <td>2014-Present</td>
+            <td>Ph.D. in Electrical and Computer Engineering</td>
+            <td>University of Nebraska- Lincoln, Lincoln, NE, USA</td>
+          </tr>
+          <tr>
+            <td>2009–2013</td>
+            <td>B.Sc. in Electronic Engineering</td>
+            <td>Iran University of Science & Technology, Behshahr, Iran</td>
+          </tr>
+          <tr class="w3-white">
+            <td>2005–2009</td>
+            <td>Diploma in Physics and Mathematics Discipline</td>
+            <td>Allameh Helli High School, Tehran, Iran</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid: Swing By & Contact -->
+<div class="w3-row" id="contact">
+  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>Swing By (After Pandemic...)</h1>
+    </div>
+    <div class="w3-padding-64">
+      <p>Office</p>
+      <p>#331 Scott Engineering Center, Lincoln, NE 68588</p>
+      <p>test@test.com</p>
+    </div>
+  </div>
+  <div class="w3-half w3-teal w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-padding-large">
+      <h1>Contact</h1>
+      <p class="w3-opacity">GET IN TOUCH</p>
+      <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Name">
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Email">
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Message">
+        </div>
+        <button type="submit" class="w3-button w3-teal w3-right">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-blue-grey w3-center w3-margin-top">
+  <p>Find me on:
+  <a href="https://www.linkedin.com/in/amirsalar-mansouri/"> <i class="fab fa-linkedin w3-hover-opacity"></i></a>  
+  <a href="https://github.com/AsMansouri"> <i class="fab fa-github w3-hover-opacity"></i></a>
+  <a href="https://www.researchgate.net/profile/Amirsalar-Mansouri/"> <i class="fab fa-researchgate w3-hover-opacity"></i></a>
+  <a href="https://orcid.org/0000-0001-9014-5024"><i class="fab fa-orcid w3-hover-opacity"></i></a>
+  </p>
+</footer>
+
+</body>
+</html>
