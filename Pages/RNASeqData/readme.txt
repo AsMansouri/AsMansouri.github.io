@@ -1,1 +1,1 @@
-In the attached file there are the three sample reads.
+In the attached file there are the three populations sample reads.
