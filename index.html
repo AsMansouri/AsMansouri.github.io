@@ -111,7 +111,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <div class="w3-padding-64 w3-padding-large">
       <h1>Contact</h1>
       <p class="w3-opacity">GET IN TOUCH</p>
-      <form class="w3-container w3-card w3-padding-32 w3-white" action="action_page.php">
+      
+      <!-- <form class="w3-container w3-card w3-padding-32 w3-white" action="action_page.php"> -->
+      <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScS37O9vNWrOSfiMRNrZkJU4yX1hk5Qtd-pss2vCPLsMMLObQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+  
         <div class="w3-section">
           <label>Name</label>
           <input class="w3-input" style="width:100%;" type="text" required name="Name">
@@ -125,8 +128,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
           <input class="w3-input" style="width:100%;" type="text" required name="Message">
         </div>
         <!-- <input type="submit" name="submit" value="Submit" class="w3-button w3-teal w3-right"> -->
-        <button type="submit" class="w3-button w3-teal w3-right">Send</button> 
+        <button type="submit" class="w3-button w3-teal w3-right" value="Submit">Send</button> 
       </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
     </div>
   </div>
 </div>
