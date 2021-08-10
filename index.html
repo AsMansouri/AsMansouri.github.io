@@ -117,11 +117,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   
         <div class="w3-section">
           <label>Name</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Name">
+          <input class="w3-input" name="entry.15571559" id="entry.15571559" style="width:100%;" type="text" required name="Name">
         </div>
         <div class="w3-section">
           <label>Email</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Email">
+          <input class="w3-input" name="entry.127828468" id="entry.127828468" style="width:100%;" type="text" required name="Email">
         </div>
         <div class="w3-section">
           <label>Message</label>
@@ -131,6 +131,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <button type="submit" class="w3-button w3-teal w3-right" value="Submit">Send</button> 
       </form>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+        <script src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript">var submitted=false;</script>
+        <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+          $('#gform *').fadeOut(2000);
+          $('#gform').prepend('Your submission has been processed...');
+          });
+        </script>
     </div>
   </div>
 </div>
