@@ -148,15 +148,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   
  <script>
    function AlertMsg() {
-    alert("The function called 'function_two' has been called.");
+    alert("Thank you! Your message has been delivered...");
    }
-   function ResetFunction() {
-     document.getElementById("gform").reset();
+   function SubmitFunction() {
+     document.getElementById("gform").submit();
    }
    function SubmitresetFunction() {
-     document.getElementById("gform").submit();
+     document.getElementById("gform").reset();
      AlertMsg();
-     ResetFunction();
+     SubmitFunction();
    }
  </script>
 <!-- Footer -->
