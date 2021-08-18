@@ -128,7 +128,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
           <input class="w3-input" name="entry.866086610" id="entry.866086610" style="width:100%;" type="text" required name="Message">
         </div>
         <!-- <input type="submit" name="submit" value="Submit" class="w3-button w3-teal w3-right"> -->
-        <!-- <button type="submit" class="w3-button w3-teal w3-right" value="Submit" onclick="resetFunction()">Send</button> -->
+        <!-- <button type="submit" class="w3-button w3-teal w3-right" value="Submit" onclick="SubmitresetFunction()">Send</button> -->
         <button type="submit" class="w3-button w3-teal w3-right" value="Submit">Send</button> 
       </form>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
@@ -147,7 +147,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   </script>
   
  <script>
-   function resetFunction() {
+   function SubmitresetFunction() {
+     document.getElementById("gform").submit();
+     alert("Thank you! Your message has been delivered...");
      document.getElementById("gform").reset();
      }
  </script>
