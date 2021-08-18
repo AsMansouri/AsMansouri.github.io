@@ -128,7 +128,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
           <input class="w3-input" name="entry.866086610" id="entry.866086610" style="width:100%;" type="text" required name="Message">
         </div>
         <!-- <input type="submit" name="submit" value="Submit" class="w3-button w3-teal w3-right"> -->
-        <button type="submit" class="w3-button w3-teal w3-right" value="Submit">Send</button> 
+        <button type="submit" class="w3-button w3-teal w3-right" onclick="resetFunction()" value="Submit">Send</button> 
       </form>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
         <script src="assets/js/jquery.min.js"></script>
@@ -143,6 +143,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   </div>
 </div>
 
+ <script>
+   function resetFunction() {
+     document.getElementById("gform").reset();
+     }
+ </script>
 <!-- Footer -->
 <footer class="w3-container w3-blue-grey w3-center w3-margin-top">
   <p>Find me on:
