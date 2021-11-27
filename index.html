@@ -20,6 +20,40 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   bottom: 0;
   height: inherit;
 }
+.img-circular{
+ width: 180px;
+ height: 180px;
+ background-image: url('Pages/TmpFiles/ProfPic - Copy.jpeg');
+ background-size: cover;
+ display: block;
+ border-radius: 100px;
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
+ border:1px solid #fff;
+-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+.bg-cover{
+  margin-bottom:100px;
+  background: url('Pages/TmpFiles/ProfPic - Copy.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+-webkit-border-top-left-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-topright: 4px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+}
+.panel-body{
+padding:21px;
+}
+.panel-title{font-weight:400;font-size:1.2em}
+.panel-txt{font-weight:300;font-size:.8em;text-align:justify;padding-top:12px}
+.panel-link{font-weight:300;font-size:.7em;text-align:justify;padding-top:12px}
+.dots{opacity:.3}
 </style>
 
 <body>
@@ -40,7 +74,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   <div class="w3-half w3-blue-grey w3-container" style="height:1000px">
     <div class="w3-padding-64 w3-center">
       <h1>About Me</h1>
-      <img src="Pages/TmpFiles/ProfPic - Copy.jpeg" class="w3-margin w3-circle" alt="Person" style="width:50%">
+      <div class="panel-head">
+        <div class="bg-cover">
+          <div style="padding-top: 100px"><div class="img-circular center"></div></div>
+        </div>
+      </div>
+      <!-- <img src="Pages/TmpFiles/ProfPic - Copy.jpeg" class="w3-margin w3-circle" alt="Person" style="width:50%"> -->
       <div class="w3-left-align w3-padding-large">
         <p>I am a Ph.D. candidate in the Electrical and Computer Engineering Department at the University of Nebraska- Lincoln and a member of the AAC Translation (AACT) Laboratory. 
            My main research interests include biomedical signal processing, electroencephalogram (EEG) signal analysis, such as brain-computer interfaces (BCI), neurophysiological disease/disorder modeling and prediction (specifically for epilepsy and TBI).</p>
